@@ -132,7 +132,7 @@ const AddProject = () => {
         />
       )}
       <label>Enverment</label>
-      <MDBInput
+      <MDBTextArea
         name='enverment'
         value={projects.enverment}
         onChange={handleChange}     
@@ -146,7 +146,7 @@ const AddProject = () => {
         />
       )}
        <label>Technologie</label>
-      <MDBInput
+      <MDBTextArea
         name='technologie'
         value={projects.technologie}
         onChange={handleChange}

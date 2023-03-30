@@ -18,17 +18,18 @@ const Update = () => {
     picturePath:'',
     video:''
   });
+  const[picturePath,setPicturePath]=useState()
   const [refresh, setRefresh] = useState(false);
   const handleFileUpload = (e) => {
-    const { name, files } = e.target;
-    // Only set the file object if a file is selected
-    if (files.length) {
-      setProject((prev) => ({
-        ...prev,
-        [name]: files[0],
-      }));
-    }
-  };
+  const { name, files } = e.target;
+  // Only set the file object if a file is selected
+  if (files.length) {
+    setProject((prev) => ({
+      ...prev,
+      [name]: files[0],
+    }));
+  }
+};
   
 
   const handleChange = (e) => {
@@ -91,8 +92,8 @@ const updateButton = (e) => {
           <Form.Control as="textarea" rows={3} name="technologie" value={project.technologie} onChange={handleChange} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        {/* <Form.Label>Project Image</Form.Label>
-        <Form.Control type="file" name="picturePath" value={project.picturePath} onChange={handleFileUpload} /> */}
+        <Form.Label>Project Image</Form.Label>
+        <Form.Control type="file" name="picturePath" value={picturePath} onChange={handleFileUpload} /> 
         <Form.Label>Project Video</Form.Label>
         <Form.Control type="text" name="video" value={project.video} onChange={handleChange} />
         </Form.Group>

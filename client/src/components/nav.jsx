@@ -29,15 +29,17 @@ function Nav() {
     setSelectedIcon(newIcon);
     localStorage.setItem('selected-icon', newIcon);
   };
+  
   const [selectedTheme, setSelectedTheme] = useState(
     localStorage.getItem('selected-theme') || 'light'
   );
   const [selectedIcon, setSelectedIcon] = useState(
     localStorage.getItem('selected-icon') || 'ri-sun-line'
   );
+
   useEffect(() => {
     const body = document.body;
-    body.classList.remove(darkTheme, 'light');
+    body.classList.remove('dark', 'light');
     body.classList.add(selectedTheme);
   }, [selectedTheme]);
 
