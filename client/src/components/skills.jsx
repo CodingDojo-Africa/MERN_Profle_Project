@@ -3,12 +3,11 @@ import PythonIMG from '../assets/img/python-5.svg'
 import CImg from '../assets/img/c.svg'
 import JsImg from '../assets/img/javascript-1.svg'
 import ReactImg from '../assets/img/react-2.svg'
-import GitImg from '../assets/img/git-icon.svg'
-import Nav from './nav'
+
 function Skills() {
   return (
     <>
-    <Nav/>
+   
     <section className="skills section" id="skills">
                 <h2 className="section__title">Skills</h2>
                 <span className="section__subtitle"> Technical Skills</span>
@@ -44,7 +43,7 @@ function Skills() {
                                     <img src={JsImg} alt="skills_image" />
                                 </div>
 
-                                <h3 className="skills__name">javascript</h3>
+                                <h3 className="skills__name">JavaScript</h3>
                                 <span className="skills__subtitle">Advanced</span>
                             </div>
 
@@ -58,22 +57,8 @@ function Skills() {
                                 <h3 className="skills__name">React</h3>
                                 <span className="skills__subtitle">Advanced</span>
                             </div>
-                            <div className="skills__data">
-                                <div className="skills__blob">
-                                    <img src="image/siemens-2.svg" alt="skills_image" />
-                                </div>
-
-                                <h3 className="skills__name">TIA Portal siemens</h3>
-                               
-                            </div>
-                            <div className="skills__data">
-                                <div className="skills__blob">
-                                    <img src="image/anaconda_logo-1024x512.png" alt="skills_image" />
-                                </div>
-
-                                <h3 className="skills__name">Anaconda</h3>
-                               
-                            </div>
+                            
+                            
 
                         </div>
                     </div>
@@ -132,6 +117,14 @@ function Skills() {
                                 </div>
 
                                 <h3 className="skills__name">Matplotlib</h3>
+                               
+                            </div>
+                            <div className="skills__data">
+                                <div className="skills__blob">
+                                    <img src="image/anaconda_logo-1024x512.png" alt="skills_image" />
+                                </div>
+
+                                <h3 className="skills__name">Anaconda</h3>
                                
                             </div>
 

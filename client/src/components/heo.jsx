@@ -49,7 +49,7 @@ function Heo() {
                             </h3>
                             <p className="home__info-description">
                             Hi. I'm Naceur,Expert in machine learning to help us extract value from our data. 
-                            You will lead all the processes from data collection, cleaning, and preprocessing,
+                            I will lead all the processes from data collection, cleaning, and preprocessing,
                              to training models and deploying them to production.
 
                                 

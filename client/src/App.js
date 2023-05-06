@@ -41,13 +41,12 @@ function App() {
       //  setCurrentUser(res.data);
        // console.log('**** => ', res.data);
        setIsLoading(false);
+       setRefresh(true)
      })
      .catch((err) => console.log('*** ==> ', err));
  }, [refresh]);
 
- const refresher = () => {
-   setRefresh(!refresh);
- };
+
 
   return (
     <>

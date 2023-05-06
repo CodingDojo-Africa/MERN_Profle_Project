@@ -22,7 +22,7 @@ import {
     MDBModalBody,
     
   } from 'mdb-react-ui-kit';
-  import AddProject from './AddProject';
+ import AddProject from './AddProject';
 const Nav=({logoutHandler})=> {
     const [showBasic, setShowBasic] = useState(false);
     const [basicModal, setBasicModal] = useState(false);

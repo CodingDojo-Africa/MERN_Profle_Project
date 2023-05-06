@@ -1,9 +1,9 @@
 import React from 'react'
-import Nav from './nav'
+
 function Server() {
   return (
     <>
-    <Nav/>
+   
     <section className="services section" id="services">
                 <h2 className="section__title">Services</h2>
                 <span className="section__subtitle">What I offer</span>

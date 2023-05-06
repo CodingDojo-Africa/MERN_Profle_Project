@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react';
 import { Link } from 'react-router-dom';
 
+
 function Nav() {
   function showMenu() {
     const navMenu = document.getElementById('nav-menu');
@@ -17,11 +18,11 @@ function Nav() {
     navLinks.forEach((link) => link.addEventListener('click', hideMenu));
   }
 
-  const darkTheme = 'dark';
+  const darktheme = 'dark-theme';
   const darkIcon = 'ri-moon-line';
 
   const toggleTheme = () => {
-    const newTheme = selectedTheme === 'light' ? 'dark' : 'light';
+    const newTheme = selectedTheme === 'light' ? 'dark-theme' : 'light';
     setSelectedTheme(newTheme);
     localStorage.setItem('selected-theme', newTheme);
 
@@ -29,21 +30,15 @@ function Nav() {
     setSelectedIcon(newIcon);
     localStorage.setItem('selected-icon', newIcon);
   };
-  
-  const [selectedTheme, setSelectedTheme] = useState(
-    localStorage.getItem('selected-theme') || 'light'
-  );
-  const [selectedIcon, setSelectedIcon] = useState(
-    localStorage.getItem('selected-icon') || 'ri-sun-line'
-  );
+
+  const [selectedTheme, setSelectedTheme] = useState(localStorage.getItem('selected-theme') || 'light');
+  const [selectedIcon, setSelectedIcon] = useState(localStorage.getItem('selected-icon') || 'ri-sun-line');
 
   useEffect(() => {
     const body = document.body;
-    body.classList.remove('dark', 'light');
+    body.classList.remove('dark-theme', 'light');
     body.classList.add(selectedTheme);
   }, [selectedTheme]);
-
-  // ... rest of the component code
 
 
   
@@ -51,7 +46,7 @@ function Nav() {
     <>
       <header className="header" id="header">
         <nav className="nav container">
-          <Link to="/" className="nav__logo">
+          <Link to="/admin" className="nav__logo">
             Naceur Keraani
           </Link>
 
@@ -102,7 +97,8 @@ function Nav() {
 
           <div className="nav__buttons" >
             {/* <!-- Theme Change Button --> */}
-            <i className={`ri-moon-line  change-theme ${selectedIcon}`} id="theme-button" onClick={toggleTheme}></i>
+            <i className={`ri-moon-line change-theme ${selectedIcon}`} id="theme-button" onClick={toggleTheme}></i>
+           
       
             {/* <!-- Toggle Button --> */}
             <div className="nav__toggle" id="nav-toggle" onClick={showMenu}>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../components/nav'
+
 import Heo from '../components/heo'
 import Skills from '../components/skills'
 import Server from '../components/serverc'
@@ -7,6 +7,7 @@ import '../assets/css/styles.css'
 import '../assets/css/swiper-bundle.min.css'
 import '../assets/js/main'
 import Project from '../components/project'
+import Language from '../components/Language'
 
 import QUALIFICATION from '../components/QUALIFICATION'
 import { Link } from "react-router-dom";
@@ -29,6 +30,7 @@ function Home() {
 <Heo/>
 <Skills/>
 <QUALIFICATION/>
+<Language/>
 <Server/>
 <Project/>
 

@@ -1,8 +1,11 @@
 const mongoose = require("mongoose");
 
-module.exports = (db_name) => {
+module.exports = () => {
   mongoose
-    .connect(`mongodb://127.0.0.1/${db_name}`)
-    .then(() => console.log(`✔✔ Established connection to the ${db_name} database`))
-    .catch((err) => console.log(`❌❌ Cannot connect to ${db_name} database`, err));
+    .connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    })
+    .then(() => console.log(`✔✔ Established connection to the MongoDB database Atlas`))
+    .catch((err) => console.log(`❌❌ Cannot connect to the MongoDB database`, err));
 };

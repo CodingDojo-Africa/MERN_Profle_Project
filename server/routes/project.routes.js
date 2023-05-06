@@ -36,7 +36,7 @@ const upload = multer({
 
 
 
-
+ 
   module.exports = (app) => {
     app.get('/api/projects', getAllProjects);
     app.get('/api/projects/:id', getOneProject);

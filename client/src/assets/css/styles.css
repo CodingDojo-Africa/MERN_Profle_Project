@@ -1430,3 +1430,97 @@ img:hover{
     margin-top: 5rem;
   }
 }
+/* bac circul */
+.circular-progress-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+
+.circular-progress {
+  width: 140px;
+  height: 140px;
+  justify-content: space-between;
+  box-shadow:  6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+  -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  margin-right: 20px;
+  border-radius: 45%;
+}
+
+.circular-progress:last-child {
+  margin-right: 0;
+}
+
+.circular-progress-background {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 10;
+}
+
+.circular-progress-bar {
+  fill: none;
+  stroke: #1b6fc9;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.circular-progress-text {
+ 
+  font-size: 24px;
+  font-weight: bold;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  color: #676666;
+}
+
+
+@media screen and (max-width: 767px) {
+  .circular-progress-container {
+    flex-wrap: wrap;
+     justify-content: space-between;
+  }
+ 
+}
+
+
+@media screen and (min-width: 576px) {
+  .circular-progress-background {
+    stroke-width: 12;
+  }
+
+  
+
+  .circular-progress-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+ 
+
+  .circular-progress-background {
+    stroke-width: 15;
+  }
+
+ 
+
+  .circular-progress-text {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 935px) {
+    .circular-progress-background {
+    stroke-width: 15;
+  }
+
+ 
+
+  .circular-progress-text {
+    font-size: 28px;
+  }
+}
