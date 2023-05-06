@@ -37,7 +37,7 @@ const Update = () => {
     setProject((prevState) => ({ ...prevState, [name]: value }));
   };
   useEffect(()=>{
-    axios.get('http://localhost:8000/api/projects/'+id)
+    axios.get('/api/projects/'+id)
     .then(res=>{console.log(res.data);
       setProject(res.data)
    
@@ -56,7 +56,7 @@ const updateButton = (e) => {
   formData.append("picturePath", project.picturePath);
   formData.append("video", project.video);
   axios
-    .put(`http://localhost:8000/api/projects/${id}`, formData)
+    .put(`/api/projects/${id}`, formData)
     .then((res) => {
       console.log(res.data);
       navigate("/admin/dash");

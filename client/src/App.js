@@ -36,7 +36,7 @@ function App() {
     };
      // console.log(`Token => ${localStorage.getItem('token')}`);
      axios
-     .get('http://localhost:8000/api/naceur/', config)
+     .get('/api/naceur/', config)
      .then((res) => {
       //  setCurrentUser(res.data);
        // console.log('**** => ', res.data);

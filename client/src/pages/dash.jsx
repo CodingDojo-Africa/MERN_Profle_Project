@@ -14,7 +14,7 @@ function Dash() {
     
   
     axios
-      .get('http://localhost:8000/api/projects' )
+      .get('/api/projects' )
       .then((res) => {
         setPirates(res.data);
         // console.log(res.data.pirates);

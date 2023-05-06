@@ -10,7 +10,7 @@ const Main=(props)=> {
    
     useEffect(()=>{
       
-      axios.get("http://localhost:8000/api/projects")
+      axios.get("/api/projects")
       .then(res=>{
         setProjects(res.data)
           setIsloading(false)

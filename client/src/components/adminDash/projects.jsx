@@ -15,7 +15,7 @@ const Projects=({projects, setProjects, refresh, setRefresh})=> {
     const deleteHandler = (id) => {
       setRefresh(!refresh)
         axios
-          .delete(`http://localhost:8000/api/projects/${id}`)
+          .delete(`/api/projects/${id}`)
           .then((res) => {
             console.log(res.data);
             console.log("delete sucess ✅");

@@ -24,7 +24,7 @@ const handleLoginChange = (e) => {
  const loginHandler = (e) => {
   e.preventDefault();
   axios
-  .post('http://localhost:8000/api/naceur/login', login ,{withCredentials: true,})
+  .post('/api/naceur/login', login ,{withCredentials: true,})
         .then((res) => {
           localStorage.setItem('token', res.data.token);
           navigate('/admin/dash');

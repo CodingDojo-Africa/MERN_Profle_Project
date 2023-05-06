@@ -13,7 +13,7 @@ const IndeusProjects = () => {
   const [projects,setProjects]=useState([])
   const navigate = useNavigate()
   useEffect(()=>{
-    axios.get("http://localhost:8000/api/projects")
+    axios.get("/api/projects")
     .then(res=>{
       setProjects(res.data)
        

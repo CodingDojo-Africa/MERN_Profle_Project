@@ -16,7 +16,7 @@ function HomeP(props) {
   const [projects,setProjects]=useState([])
 
   useEffect(()=>{
-    axios.get("http://localhost:8000/api/projects")
+    axios.get("/api/projects")
     .then(res=>{
       setProjects(res.data)
        

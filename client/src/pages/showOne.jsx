@@ -18,7 +18,7 @@ function ShowOne() {
   const [refresh, setRefresh] = useState(false);
   const navigate=useNavigate();
   useEffect(()=>{
-    axios.get('http://localhost:8000/api/projects/'+id)
+    axios.get('/api/projects/'+id)
     .then(res=>{console.log(res.data);
       setProject(res.data)
    
