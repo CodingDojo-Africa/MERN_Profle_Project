@@ -19,6 +19,7 @@ const Projects=({projects, setProjects, refresh, setRefresh})=> {
           .then((res) => {
             console.log(res.data);
             console.log("delete sucess ✅");
+            refresh(true)
             navigate("/admin/dash");
             setProjects(projects.filter((project) => project._id !== id));
            

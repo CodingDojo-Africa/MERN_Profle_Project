@@ -14,7 +14,7 @@ const Main=(props)=> {
       .then(res=>{
         setProjects(res.data)
           setIsloading(false)
-          refresh()
+          refresh(true)
       })
       .catch(err=>console.log("err",err))
       

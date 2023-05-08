@@ -8,7 +8,7 @@ import {
   MDBValidationItem,
 } from "mdb-react-ui-kit";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const AddProject = () => {
   const navigate = useNavigate();
@@ -82,6 +82,8 @@ const AddProject = () => {
   };
   return (
     <>
+    <h3>Add New Project</h3>
+    <Link  className="btn btn-link" to="/admin/dash">Home🏠</Link>
       <MDBRow className='justify-content-center'>
 <MDBCol md='6'>
 <form onSubmit={createProject}>
@@ -179,8 +181,9 @@ const AddProject = () => {
        
 
       <input type='submit' className='mx-0'
-       value="Submit" />
+       value="Submit" />    
     </form>
+   
   </MDBCol>
 </MDBRow>
 </>

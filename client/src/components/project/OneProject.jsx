@@ -75,28 +75,16 @@ function OneProject({project}) {
             <p> About Dataset:<br/>
               Company Description<br/>
              {project.description}
-<br/>Shareholders<br/>
+<br/>
+{project.catagorie}
+<hr/>
+<br/>
+<li>{project.enverment}</li>
+<hr/>
+<br/>
+<li>{project.technologie}</li>
 
-Mutual fund holders 49.41%<br/>
-Individual stakeholders 4.17%<br/>
-Other institutional 31.86%<br/>
-
-Contact Information<br/>
-
-Netflix, Inc.<br/>
-100 Winchester Circle<br/>
-Los Gatos California 95032<br/>
-
-
-P: (408) 540-3700<br/>
-Investor Relations: (408) 809-5360<br/>
-www.netflix.com<br/>
-
-Source and Inspiration<br/>
-
-The data is collected from Yahoo Finance. Inspiration is the release
-of the fifth season of my favorite Netflix show Money Heist (La Casa
-de Papel)</p> </MDBModalBody>
+</p> </MDBModalBody>
 
             <MDBModalFooter>
               <MDBBtn color='secondary' onClick={toggleShow}>

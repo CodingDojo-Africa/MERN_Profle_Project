@@ -23,7 +23,7 @@ import QUALIFICATION from "./components/QUALIFICATION";
 import Server from "./components/serverc";
 import Project from "./components/project";
 import Contact from "./components/contact";
-
+import AddProject from "./components/adminDash/AddProject";
 function App() {
   // const [currentUser, setCurrentUser] = useState({});
   const [refresh, setRefresh] = useState(false);
@@ -75,6 +75,9 @@ function App() {
                   // refresh={refresh}
 /></PrivateRoute>}/>
      <Route path="/update/:id" element={<Update /> } />
+     <Route path="/add" element={<AddProject /> } />
+     
+     
     </Routes>
     
     </>

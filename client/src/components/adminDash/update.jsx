@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,Link} from 'react-router-dom';
 import axios from 'axios';
 import Form from 'react-bootstrap/Form';
 import { useParams } from 'react-router-dom';
@@ -99,6 +99,7 @@ const updateButton = (e) => {
         </Form.Group>
         <button type="submit" variant="outline-primary">Update Project</button>
       </Form>
+      <Link  className="btn btn-link" to="/admin/dash">Home🏠</Link>
     </div>
   );
 };

@@ -11,23 +11,14 @@ import {
    
     MDBCollapse,
   } from 'mdb-react-ui-kit';
- 
-  import {
-    MDBBtn,
-    MDBModal,
-    MDBModalDialog,
-    MDBModalContent,
-    MDBModalHeader,
-    MDBModalTitle,
-    MDBModalBody,
-    
-  } from 'mdb-react-ui-kit';
- import AddProject from './AddProject';
+  import { useNavigate,Link} from "react-router-dom";
+
+
 const Nav=({logoutHandler})=> {
     const [showBasic, setShowBasic] = useState(false);
-    const [basicModal, setBasicModal] = useState(false);
+  
 
-  const toggleShow = () => setBasicModal(!basicModal);
+
  
   return (
     <div>
@@ -52,7 +43,7 @@ const Nav=({logoutHandler})=> {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink onClick={toggleShow}>Add new project</MDBNavbarLink>
+              <MDBNavbarLink ><Link to="/add"> Add new project</Link></MDBNavbarLink>
             </MDBNavbarItem>
 
           </MDBNavbarNav>
@@ -63,25 +54,7 @@ const Nav=({logoutHandler})=> {
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>
-    <MDBModal show={basicModal} setShow={setBasicModal} tabIndex='-1'>
-        <MDBModalDialog>
-          <MDBModalContent>
-            <MDBModalHeader>
-              <MDBModalTitle>Add New Project</MDBModalTitle>
-              <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
-            </MDBModalHeader>
-            <MDBModalBody>
-
-<AddProject/>
-
-
-
-            </MDBModalBody>
-
-           
-          </MDBModalContent>
-        </MDBModalDialog>
-      </MDBModal>
+  
     </div>
   )
 }
