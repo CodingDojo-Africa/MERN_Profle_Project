@@ -27,8 +27,8 @@ const DataP = ({projects}) => {
         <div className="project-img-box">
           <Link to={`/show/${project._id}`}>
             <img src={project.picturePath} alt="" />
-          </Link>
-          <h2>{project.title}</h2>
+          
+          <h2>{project.title}</h2></Link>
         </div>
       </div>
     ) : null
