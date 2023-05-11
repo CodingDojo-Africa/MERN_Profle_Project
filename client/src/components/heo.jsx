@@ -48,23 +48,17 @@ function Heo() {
                                 BIOGRAPHY
                             </h3>
                             <p className="home__info-description">
-                            Hi. I'm Naceur,Expert in machine learning to help us extract value from our data. 
-                            I will lead all the processes from data collection, cleaning, and preprocessing,
-                             to training models and deploying them to production.
+                            Hi. I'm Naceur,an expert in machine learning with a 
+                            focus on extracting valuable insights from data. 
+                            With my expertise, I can guide you through the entire process of developing a machine learning solution.
+                            My goal is to help you unlock the full potential of your data and empower you to make data-driven decisions that can drive business growth and innovation.
 
                                 
                             </p>
                         </div>
 
                         <div>
-                            <h3 className="home__info-title">
-                                CONTACT
-                            </h3>
-                            <p className="home__info-description">
-                                Tunisia, Tunis <br/>
-                                Keraani.naceur@gmail.com <br/>
-                                +216 95 88 17 09 <br/>
-                            </p>
+                            
                         </div>
 
                         <div>
@@ -95,6 +89,16 @@ function Heo() {
                             </h3>
                             <p className="home__info-number">
                                 15+
+                            </p>
+                        </div>
+                        <div>
+                        <h3 className="home__info-title">
+                                CONTACT
+                            </h3>
+                            <p className="home__info-description">
+                                Tunisia, Tunis <br/>
+                                Keraani.naceur@gmail.com <br/>
+                                +216 95 88 17 09 <br/>
                             </p>
                         </div>
 

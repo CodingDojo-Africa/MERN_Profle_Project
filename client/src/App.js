@@ -18,11 +18,11 @@ import DeepProject from "./pages/DeepProject";
 import IndeusProjects from "./pages/IndustrialAutomationProject";
 
 import Heo from "./components/heo";
-import Skills from "./components/skills";
-import QUALIFICATION from "./components/QUALIFICATION";
-import Server from "./components/serverc";
-import Project from "./components/project";
-import Contact from "./components/contact";
+import SkillsPage from "./components/paths/SkillsPage";
+import QUALIFICATIONPage from "./components/paths/QUALIFICATIONPage";
+import ServerPage from "./components/paths/ServerPage";
+import ProjectPage from "./components/paths/ProjectPage";
+import ContactPage from "./components/paths/ContactPage";
 import AddProject from "./components/adminDash/AddProject";
 function App() {
   // const [currentUser, setCurrentUser] = useState({});
@@ -54,13 +54,13 @@ function App() {
     <Routes>
 
       <Route path='/heo' element={<Heo/>} />
-        <Route path='/skills' element={<Skills/>} />
-        <Route path='/QUALIFICATION' element={<QUALIFICATION/>} />
-        <Route path='/Server' element={<Server/>} />
+        <Route path='/skills' element={<SkillsPage/>} />
+        <Route path='/QUALIFICATION' element={<QUALIFICATIONPage/>} />
+        <Route path='/Server' element={<ServerPage/>} />
         
 
-        <Route path='/Project' element={<Project/>} />
-        <Route path='/Contact' element={<Contact/>} />
+        <Route path='/Project' element={<ProjectPage/>} />
+        <Route path='/Contact' element={<ContactPage/>} />
        
       
       <Route path='/' element={<Home/>}/>

@@ -24,7 +24,7 @@ const Nav=({logoutHandler})=> {
     <div>
       <MDBNavbar expand='lg' light bgColor='light'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='#'>Keraani Naceur</MDBNavbarBrand>
+      <Link to="/">  <MDBNavbarBrand >Keraani Naceur</MDBNavbarBrand></Link>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
@@ -38,9 +38,9 @@ const Nav=({logoutHandler})=> {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' to='/'>
+            <Link to="/">   <MDBNavbarLink active aria-current='page'>
                 Home
-              </MDBNavbarLink>
+              </MDBNavbarLink></Link>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink ><Link to="/add"> Add new project</Link></MDBNavbarLink>
