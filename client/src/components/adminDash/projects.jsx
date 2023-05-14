@@ -2,7 +2,17 @@ import React,{ useState }  from 'react'
 import {  MDBBtn, MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 import { useNavigate,Link} from "react-router-dom";
 import axios from "axios";
-
+import {
+  
+  MDBModal,
+  MDBModalDialog,
+  MDBModalContent,
+  MDBModalHeader,
+  MDBModalTitle,
+  MDBModalBody,
+  MDBModalFooter,
+} from 'mdb-react-ui-kit';
+import '../../status/css/button.css'
 
 
 const Projects=({projects, setProjects, refresh, setRefresh})=> {
@@ -85,7 +95,35 @@ const Projects=({projects, setProjects, refresh, setRefresh})=> {
           {project.catagorie}
           </div></td>
         <td>
-       {project.description}
+     
+       < div className="box">
+      <button className='button' onClick={toggleShow}>See Description <i className="ri-search-eye-line"></i></button> <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<MDBModal show={basicModal} setShow={setBasicModal} tabIndex='-1'>
+        <MDBModalDialog>
+          <MDBModalContent>
+            <MDBModalHeader>
+              <MDBModalTitle>{project.title}</MDBModalTitle>
+              <MDBBtn classNameName='btn-close' color='none' onClick={toggleShow}></MDBBtn>
+            </MDBModalHeader>
+            <MDBModalBody> 
+            
+            <p>   {project.description}
+
+</p> </MDBModalBody>
+
+            <MDBModalFooter>
+              <MDBBtn color='secondary' onClick={toggleShow}>
+                Close
+              </MDBBtn>
+             
+            </MDBModalFooter>
+          </MDBModalContent>
+        </MDBModalDialog>
+      </MDBModal> 
         </td>
         
         <td>
@@ -103,10 +141,12 @@ Delete
 </button>
         </td>
       </tr>
+      
     })}
     </MDBTableBody>
   </MDBTable> 
   <div/> <div/>
+     
   </div>
   )
 }
