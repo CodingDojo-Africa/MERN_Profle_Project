@@ -99,7 +99,7 @@ const updateButton = (e) => {
         </Form.Group>
         <button type="submit" variant="outline-primary">Update Project</button>
       </Form>
-      <Link  className="btn btn-link" to="/admin/dash">Home🏠</Link>
+      <Link className="btn btn-link" variant="outline-primary"  to="/admin/dash">Home🏠</Link>
     </div>
   );
 };
