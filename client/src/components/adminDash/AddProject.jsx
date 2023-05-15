@@ -95,6 +95,7 @@ const AddProject = () => {
          onChange={handleChange}
          
        />
+       <p style={{color: 'red', backgroundColor: 'lime'}}>{errors.title}</p>
 {errors.title && (
 <MDBValidationItem
            invalid
@@ -102,7 +103,7 @@ const AddProject = () => {
            feedbackType='invalid'
          />
 )}
-     
+     <p style={{color: 'red', backgroundColor: 'lime'}}>{errors.catagorie}</p>
        <label>Category:</label>
   <select  name='catagorie' value={projects.catagorie} onChange={handleChange}>
     <option value="">--Please select a category--</option>
@@ -119,12 +120,12 @@ const AddProject = () => {
           feedbackType='invalid'
         />
       )}
+      <p style={{color: 'red', backgroundColor: 'lime'}}>{errors.description}</p>
       <label>Description</label>
       <MDBTextArea
         name='description'
         value={projects.description}
         onChange={handleChange}
-        required
       />
       {errors.description && (
         <MDBValidationItem
@@ -133,12 +134,13 @@ const AddProject = () => {
           feedbackType='invalid'
         />
       )}
+      <p style={{color: 'red', backgroundColor: 'lime'}}>{errors.enverment}</p>
       <label>Enverment</label>
       <MDBTextArea
         name='enverment'
         value={projects.enverment}
         onChange={handleChange}     
-           required
+           
       />
       {errors.enverment && (
         <MDBValidationItem
@@ -147,12 +149,13 @@ const AddProject = () => {
           feedbackType='invalid'
         />
       )}
+      <p style={{color: 'red', backgroundColor: 'lime'}}>{errors.technologie}</p>
        <label>Technologie</label>
       <MDBTextArea
         name='technologie'
         value={projects.technologie}
         onChange={handleChange}
-        required
+        
       />
       {errors.technologie && (
         <MDBValidationItem
