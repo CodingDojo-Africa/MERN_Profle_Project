@@ -14,14 +14,56 @@ function QUALIFICATION() {
                             <i className="ri-pencil-ruler-2-line"></i> Education
                         </h3>
                         <div className="qualification__info">
-
                         <div>
+                                <h3 className="qualification__name">
+                                R for Data Science
+                                </h3>
+                                <span className="qualification__country">IBM Developer Skills Network.</span>
+                                <span className="qualification__year">March 2024</span>
+                            </div>
+                            <div>
+                                <h3 className="qualification__name">
+                                Deep Learning Fundamentals
+                                </h3>
+                                <span className="qualification__country">IBM Developer Skills Network.</span>
+                                <span className="qualification__year">March 2024</span>
+                            </div>
+                            <div>
+                                <h3 className="qualification__name">
+                                Machine Learning with Python
+                                </h3>
+                                <span className="qualification__country">IBM Developer Skills Network.</span>
+                                <span className="qualification__year">February  2024</span>
+                            </div>
+                            <div>
+                                <h3 className="qualification__name">
+                                Data Visualization with Python 
+                                </h3>
+                                <span className="qualification__country">IBM Developer Skills Network.</span>
+                                <span className="qualification__year">February  2024</span>
+                            </div>
+                            <div>
+                                <h3 className="qualification__name">
+                                Data Analysis with Python 
+                                </h3>
+                                <span className="qualification__country">IBM Developer Skills Network.</span>
+                                <span className="qualification__year">December 2023</span>
+                            </div>
+                            <div>
+                                <h3 className="qualification__name">
+                                Python 101 for Data Science
+                                </h3>
+                                <span className="qualification__country">IBM Developer Skills Network.</span>
+                                <span className="qualification__year">October 2023</span>
+                            </div>
+                            <div>
                                 <h3 className="qualification__name">
                                 Artificial Intelligence And Machine Learning  Certification
                                 </h3>
-                                <span className="qualification__country">Gomycode .</span>
-                                <span className="qualification__year">Graduation: October 2022 - February 2023</span>
+                                <span className="qualification__country">GOMYCODE.</span>
+                                <span className="qualification__year">October 2022 -February  2023</span>
                             </div>
+                        
                             <div>
                                 <h3 className="qualification__name">
                                 Automation Siemens PLC course  Certification
@@ -59,30 +101,10 @@ function QUALIFICATION() {
                                     AI/Machine Learning Software Developer
                                 </h3>
                                 <span className="qualification__country">Freelancer</span>
-                                <span className="qualification__year">2021-2023</span>
+                                <span className="qualification__year">2021-2024</span>
                             </div>
 
-                            <div>
-                                <h3 className="qualification__name">
-                                    Training Automation Technician
-                                </h3>
-                                <span className="qualification__country">Vilavi Ice Cream Company.</span>
-                                <span className="qualification__year">February 2017 - April2017</span>
-                            </div>
-                            <div>
-                                <h3 className="qualification__name">
-                                    Training Automation Technician
-                                </h3>
-                                <span className="qualification__country">ElMAZZRA Company.</span>
-                                <span className="qualification__year">January 2017 -February 2017</span>
-                            </div>
-                            <div>
-                                <h3 className="qualification__name">
-                                    Training Electrician 
-                                </h3>
-                                <span className="qualification__country">SNFCT.</span>
-                                <span className="qualification__year">August 2016 -September 2016</span>
-                            </div>
+                           
 
                         </div>
                     </div>

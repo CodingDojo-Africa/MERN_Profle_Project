@@ -21,7 +21,7 @@ function Heo() {
 
                         <div className="home__blob grid">
                             <div className="home__perfil">
-                                <img src='/image/pixlr-bg-result.png' alt="home perfil" />
+                                <img src='/image/naceeiruhncf.jpg' alt="home perfil" />
                             </div>
 
                             <img src={img} alt="tesimege" className="home__shape-wawes" />

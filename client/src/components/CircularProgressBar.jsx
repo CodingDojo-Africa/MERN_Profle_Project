@@ -61,7 +61,7 @@ const progressLange=150;
           cy="70"
           r="60"
           strokeDasharray="440"
-          strokeDashoffset={offset}
+          strokeDashoffset={tester}
         />
         <text x="70" y="70" className="circular-progress-text">Deutsch</text>
       </svg>
