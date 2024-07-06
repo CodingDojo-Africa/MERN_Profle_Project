@@ -14,7 +14,7 @@ module.exports.addProject = (req, res,next) => {
       description: req.body.description,
       enverment: req.body.enverment,
       technologie: req.body.technologie,
-      picturePath: req.file ? url + '/' + req.file.filename : null,
+      picturePath: req.file ? url + '/_images/' + req.file.filename : null,
       video: req.body.video
 
     }
@@ -47,7 +47,7 @@ module.exports.updateProject = (req, res, next) => {
     description: req.body.description,
     enverment: req.body.enverment,
     technologie: req.body.technologie,
-    picturePath: req.file ? url + '/' + req.file.filename : req.body.picturePath,
+    picturePath: req.file ? url + '/_images/' + req.file.filename : req.body.picturePath,
     video: req.body.video
   };
   Project.findByIdAndUpdate(req.params.id, updatedProject, { new: true })

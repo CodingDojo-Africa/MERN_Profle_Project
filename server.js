@@ -15,7 +15,7 @@ const cors = require("cors");
 app.use(express.static("public"));
 //Middleware
 app.use(cors({ credentials: true, origin: 'http://localhost:3000' }), express.json(), express.urlencoded({ extended: true }));
-
+app.use('/_images', express.static('public'))
 // Database connection
 require("./config/mongoose.config")();
 
