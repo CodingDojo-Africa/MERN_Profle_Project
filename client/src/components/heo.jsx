@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import img from "../assets/img/shape-wawes.svg"
-import Fimg from "../assets/img/shape-circle.svg";
-import Naceuri from"../assets/img/naceeiruhncf.JPG";
+import Fimg from "../assets/img/shape-circle.svg"
+
 function Heo() {
   return (
    <>
@@ -21,7 +21,7 @@ function Heo() {
 
                         <div className="home__blob grid">
                             <div className="home__perfil">
-                                <img src={Naceuri}alt=" naceur" />
+                                <img src='/image/naceeiruhncf.JPG' alt="home perfil" />
                             </div>
 
                             <img src={img} alt="tesimege" className="home__shape-wawes" />
